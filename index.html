@@ -4,61 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
     <title>Crystal Collector</title>
 </head>
 <body>
     <br>
     <div class="container">
-        <div class="row"></div>
+        <div class="row">
             <div id = "MainHeader" class="col-md-12" >
                 <h1>Crystal Collector</h1>
             </div>
+        </div>
         </div>
         <br>
         <div class="row"></div>
             <div id = "GameInsructions" class="col-md-12" >
                 <p>You will be given a random number at the start of the game. <br /> <br />
-                There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score. <br /> <br />
-                You win the game by matching your total score to the random number; You lose the game if your total score goes above the random number.<br /> <br />
-                The value of each crystal is hidden from you until it is clicked once.
-                Each time when the game starts, a new random number will be chosen and the crystal values will change.</p>
+                There are four crystals below. By clicking on a crystal, you will add a specific amount of points to the player score. <br /> <br />
+                You win the game by matching player score to the gem score; You lose the game if the player score goes above the gem score.<br /> <br />
+                The value of each crystal is hidden from you until it is clicked for the first time.
+                Each time a new game starts, a random crystal value will be chosen and the crystal values will change.</p>
+                <br>
             </div>
         </div>
-
+    
+       
         <div class="row">
-                <div id = "GreenGem" class="col-md-4" >
-                    <img class = "img-responsive" src = "assets/images/emerald.png">  
+                
+                <div id = "GreenGem" class="col-md-3" >
+                    <img class = "img-responsive" src = "assets/images/emerald.png" alt="Gem">  
                 </div>
-                <div id = "RedGem" class="col-md-4" >
-                    <img class = "img-responsive" src = "assets/images/ruby.png">  
+                <div id = "RedGem" class="col-md-3" >
+                    <img class = "img-responsive" src = "assets/images/ruby.png" alt="Gem">  
                 </div>
-                <div id = "WhiteGem" class="col-md-4" >
-                    <img class = "img-responsive" src = "assets/images/diamond.png">  
+                <div id = "WhiteGem" class="col-md-3" >
+                    <img class = "img-responsive" src = "assets/images/diamond.png" alt="Gem">  
                 </div>
-                <div id = "PurpleGem" class="col-md-4" >
-                    <img class = "img-responsive" src = "assets/images/purple.png">  
+                <div id = "PurpleGem" class="col-md-3" >
+                    <img class = "img-responsive" src = "assets/images/purple.png" alt="Gem">  
                 </div>
+               
         </div>
+     
 
+
+        <br>
         <div class="container">
             <div class="row">
                 <div id = "GemScore" class="col-md-4" >
-                    <p id="GemTotal">Gem Score: </p>
+                    <p>Crystal Score: <span id="GemTotal"></span></p>
                 </div>
                 <div id = "PlayerScore" class="col-md-4" >
-                    <p id="PlayerTotal">Player Score: </p>
+                    <p>Player Score: <span id="PlayerTotal"></span></p>
                 </div>
                 <div id = "TotalScore" class="col-md-4" >
-                    <p id="WinTotal">Wins: </p>
-                    <p id="LossTotal">Losses: </p>
+                    <p>Wins: <span id="WinTotal"></span></p>
+                    <p>Losses: <span id="LossTotal"></span></p>
                 </div>
             </div>
         </div>
 
         <script type="text/javascript" src="assets/javascript/game.js"></script>
-
+        
+       
 </body>
 </html>

@@ -32,6 +32,15 @@ h1{
 #GreenGem ,#RedGem, #WhiteGem, #PurpleGem{
 	height: 350px;
 	width: 350px;
+	margin: 35px;
+}
+.crystalsContainer
+{
+
+
+	width: 100%;
+	margin: 0 auto;
+	align-items: center;
 
 }
 
